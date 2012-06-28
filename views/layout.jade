@@ -1,0 +1,106 @@
+!!! 5
+//if lt IE 7
+  <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en">
+  
+//if IE 7
+  <html class="no-js lt-ie9 lt-ie8" lang="en">
+  
+//if IE 8
+  <html class="no-js lt-ie9" lang="en">
+
+html(lang="en")
+  
+  head
+    meta(charset='utf-8')
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    
+    link(rel='stylesheet', href='/application.css', type='text/css', charset='utf-8')
+
+    title OPF
+    link(rel='apple-touch-icon', href='apple-touch-icon.png')
+    //link(rel='icon', type='image/ico', href='favicon.ico')
+
+    //if lt IE 9
+      <link rel="stylesheet" href="src/stylesheets/ie.css">
+    
+    //if lt IE 9
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  
+    
+    script(src='/application.js', type='text/javascript', charset='utf-8')
+      
+    script(type='text/javascript', charset='utf-8')
+      var jQuery  = require("jqueryify");
+      var exports = this;
+      jQuery(function(){
+        var App = require("index");
+        exports.app = new App({el: $("body")});      
+      });
+
+  body.nice
+    .navbar.navbar-fixed-top
+      .navbar-inner
+        .container
+          span.logo Hostel Corcovado&nbsp;
+        
+          span.slogan |  Rainforest
+        
+          .btn.btn-large.btn-warning.pull-right Contact Us
+      
+    != body
+    
+      
+      
+    .exclamation.
+      <div class="aside-top"></div>
+      <div class="container">
+        <div class="row">
+          <div class="span12">
+            <div class="row">
+              <div class="span4">
+                <h3>Our Company</h3>
+                <b class="colored"><em>Quisque rutrum, lorem non hendrerito.</em></b>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean dapibus pede et nisl. Nullam quis velit at lectus lobortis sodales. Mauris vitae enim ...</p>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean dapibus pede et nisl. Nullam quis velit at lectus lobortis sodales.</p><button class="btn btn-inverse">Read More</button>
+              </div><!-- .span4 -->
+              <hr class="visible-phone">
+              <div class="span4">
+                <h3>Support Team</h3>
+                <div class="wrapper">
+                  <figure class="pull-left"> 
+                      <img alt="" src="img/aside-01.png">
+                  </figure>
+                  <div class="extra-wrap">
+                    <span class="small-font"><a href="#">Nov. 09, 2011</a></span>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typeset-ting industry. Lorem Ipsum has been the industry's standard dummy ... <span class="small-font"><a href="#"><i class="icon-external-link"></i></a></span></p>
+                  </div>
+                </div>
+                <div class="wrapper">
+                  <figure class="pull-left"> 
+                    <img alt="" src="img/aside-02.png">
+                  </figure>
+                  <div class="extra-wrap">
+                    <span class="small-font"><a href="#">Sep. 17, 2010</a></span>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typeset-ting industry. Lorem Ipsum has been the industry's standard dummy ... <span class="small-font"><a href="#"><i class="icon-external-link"></i></a></span></p>
+                  </div>
+                </div>
+                <div class="clear"></div>
+              </div><!-- .span4 -->
+              <hr class="visible-phone">
+              <div class="span4">
+                <h3>What Clients Say</h3>
+                <p class="testimonials">
+                  <em>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis eget nulla. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In viverra, mi sed accumsan hendrerit, velit quam pulvinar dolor, at malesuada orci eros hendrerit purus.</em>
+                </p><span class="small-font"><a href="#">Dr. Michael Moll</a> [22.08.2012]</span>
+                <hr>
+                <div class="footer-social">
+                  <img alt="" src="img/html5-css3-small.png">
+                </div>
+                <div class="clear"></div>
+              </div><!-- .span4 -->
+            </div><!-- .row -->
+          </div><!-- .span12 -->
+        </div><!-- .row -->
+      </div><!-- .container -->
+    </div>

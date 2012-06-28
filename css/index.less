@@ -1,0 +1,164 @@
+@import "./bootstrap/bootstrap.less";
+@import "./bootstrap/responsive.less";
+
+body{
+  padding-top: 50px;
+}
+
+.container{
+  max-width: 940px;
+}
+
+.navbar{
+  .navbar-inner{
+    background: #fff;
+    @shadow: 0 1px 10px rgba(0, 0, 0, 0.25);
+    border-bottom: 1px solid #999;
+    .box-shadow(@shadow);
+    .container{
+      width: 1170px;
+      padding: 15px 0px 10px 0px;
+      
+      .btn{
+        margin: 0px;
+      }
+      
+      .logo{
+        font-size: 25px;
+        font-weight: 200;
+        
+      }
+      
+      .slogan{
+        display: inline-block;
+        text-shadow: 0 2px 2px rgba(33,33,33,.15);      
+        color: @green;
+        font-weight: 900;
+        font-size: 20px;
+      }
+      
+    }
+  }
+}
+
+// SPLASH
+.splash{
+
+  padding: 20px 0px;
+
+  background-color: #dedede;
+  background-image: url("/images/arches.png"); 
+  
+  img{
+    border: 7px solid @green;
+    max-height: 380px;
+    
+  }
+  
+  
+  .discount{
+    font-size: 14px;
+    font-weight: 500;
+    padding: 6px 5px;
+  }
+    
+  .callout{
+    width: 80%;
+    border: 1px solid #fff;
+    margin-bottom: 6px;
+    margin-top: 6px;
+    padding: 15px;
+    .badge{
+      font-size: 20px;
+      padding:15px;
+    }
+    .roomType{
+      font-size: 20px;
+      line-height: 10px;
+      font-weight: 200;
+      small{
+        font-size: 14px;
+        font-weight: 100;
+        line-height: 10px;
+      }
+    }
+  }
+  
+}
+  
+// info
+.info{
+  padding: 20px 0px 30px 0px;
+  background-color: #F8F8F8;
+  border-bottom: 1px solid #EFEFEF;
+  border-top: 1px solid #EFEFEF;
+  h2{
+    text-shadow: 1px 1px 0 #F2F2F2, 1px 2px 0 #B1B1B2;
+  }
+  
+  p{
+    margin: 0 30px 9px 0;
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    line-height: 23px;
+    font-weight: 100;
+    text-align: justify;
+  }
+  
+}
+
+.hostel{
+  .caption{
+    color: #444;
+    text-shadow: 1px 1px 0 #F2F2F2, 1px 2px 0 #B1B1B2;
+    
+  }
+  p{
+    font-family: 'Lato', sans-serif;
+    font-size: 14 px;
+    line-height: 18px;
+    font-weight: 100;
+  }
+}
+
+.wildlife{
+  .imgWrapper{
+    height: 40px;
+    overflow: hidden;
+    position: relative;
+  }
+  img{
+    position: absolute;
+  }
+  .caption{
+    display: none;
+  }
+}
+
+.activities{
+
+  .label{
+    font-size: 12px;
+    padding: 2px;
+  }
+  .details{
+    color: #777;
+    padding-left: 3px;
+    display: inline-block;
+  }
+  h4{
+    font-weight: 400;
+    color: #555;
+  }
+}
+
+.exclamation{
+  margin-top: 90px;
+  background-color: #F8F8F8;
+  border-bottom: 1px solid #EFEFEF;
+  border-top: 1px solid #EFEFEF;
+  font-size: 13px;
+  line-height: 110%;
+}
+
+  
