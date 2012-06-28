@@ -17,7 +17,7 @@ body{
     .box-shadow(@shadow);
     .container{
       width: 1170px;
-      padding: 15px 0px 10px 0px;
+      padding: 18px 0px 10px 0px;
       
       .btn{
         margin: 0px;
@@ -25,8 +25,9 @@ body{
       
       .logo{
         font-size: 25px;
-        font-weight: 200;
-        
+        font-weight: 100;
+        display: inline-block;
+        vertical-align: top;
       }
       
       .slogan{
@@ -35,6 +36,7 @@ body{
         color: @green;
         font-weight: 900;
         font-size: 20px;
+        vertical-align: top;
       }
       
     }
@@ -45,16 +47,12 @@ body{
 .splash{
 
   padding: 20px 0px;
-
   background-color: #dedede;
   background-image: url("/images/arches.png"); 
   
-  img{
+  .carousel{
     border: 7px solid @green;
-    max-height: 380px;
-    
   }
-  
   
   .discount{
     font-size: 14px;

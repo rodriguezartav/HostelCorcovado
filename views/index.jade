@@ -1,8 +1,22 @@
 .splash
   .container
     .row-fluid
-      .span8
-        img(src="images/kitchen.jpg")
+      .span8.
+        <div id="myCarousel" class="carousel slide">
+          <div class="carousel-inner carouselImages">
+
+            <div class="item">
+              <img src="/images/kitchen.jpg" alt="">
+              <div class="carousel-caption">
+                <h4>Hostel Corcovado in the magical Rainforest</h4>
+                <p></p>
+              </div>
+            </div>
+
+          </div>
+          <a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>
+          <a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
+        </div>
         
       .span4
           
@@ -26,7 +40,7 @@
           .discount.label.label-warning 20% discount when your stay 3+ nights
         
 
-.alert.alert-success
+.alert.alert-success(style="margin-bottom: 0px")
   .container
     h2 Osa Peninsula protects 3% of all the World's Biodiversity
     h4 It's Amazing to see how hundreds of living things depend on each other to survive
@@ -36,28 +50,28 @@
   .container
     .row-fluid
       .span4
-        h4 The Meca for Wildlife observation
         h2 Wildlife
-        
-        p This is one of the last places on earth with abundant wildlife populations within reach
+        h4 The Meca for Wildlife observation        
+        p One of the only places on earth with abundant wildlife populations
 
         h3 You've never seen life like this
         
       .span4
         h2 Community
         h4 Osa Peninsula is cool & calm
-        p Being isolated from crazy development and tourism frenzy help us stay a true community
+        p Isolated from crazy development tourism frenzy, we stayed a true community
         h3 We live among authentic farmers
 
 
       .span4
         h2 Experience
         h4 People change when they visit Corcovado
-        p A powerful place that will reach inside you and explain the magical powers of nature
+        p A powerful place that will reach inside and explain the secrets of nature
         h3 Don't believe us, then visit :)
         
 
-
+br
+br
 .hostel
   .container
     .row-fluid   
@@ -92,22 +106,22 @@
       .span3.modable
         img(src="/images/kitchen.jpg").thumbnail
         h4.caption Full Kitchen
-        p Large Suite with A/C , Hot Water , Private Bathroom, Private Kitchenet 
+        p We've got an industrial size kitchen with plenty of good quality utencils
 
       .span3.modable
         img(src="/images/dinning.jpg").thumbnail
         h4.caption Dinning Hall
-        p Large Room, walk-in closet, fans and external private bathroom
+        p Embed in a secondary forest, is a great place to relax, eat and read
 
       .span3.modable
         img(src="/images/bridges.jpg").thumbnail
         h4.caption Bridges
-        p 2 Small Confy Private Rooms side by side with Fan and Closet
+        p Every building is connected with elevated bridges, "Ewok" style :)
 
       .span3.modable
         img(src="http://placehold.it/640x420").thumbnail
         h4.caption Bathrooms
-        p Large Clean Bathrooms with
+        p Large Clean Large Wood and Cement Bathrooms painted with happy animals
   br
   
 
@@ -118,10 +132,10 @@
     h2.span Make a Reservation Today
     .btn.pull-right.btn-large.btn-warning Reservations
 
-
+br
+br
 .container
   .row-fluid
-
     .wildlife.span6
       h1 Meet the other Guests
       h4 Millions of species of mammals, trees, birds, insects and reptiles
@@ -134,7 +148,7 @@
 
         .span3
             .imgWrapper.modable.thumbnail
-              img(src="/images/congo.jpg")
+              img(src="/images/tamandua.jpg")
             .caption Big and Strong Cats
    
         .span3
@@ -144,19 +158,37 @@
 
         .span3
             .imgWrapper.modable.thumbnail
-              img(src="/images/gemelas.jpg")
-            .caption Whales, Dolfines, Turtles
-      .row-fluid
-
-        .span3
-            .imgWrapper.modable.thumbnail
               img(src="/images/trees.jpg")
             .caption Trees, Plants and Flowers
 
+      .row-fluid
         .span3
             .imgWrapper.modable.thumbnail
-              img(src="/images/insects.jpg")
-            .caption Reptiles and cool Insects
+              img(src="/images/arana.jpg")
+            .caption Monkeys and Perecezos
+
+        .span3
+            .imgWrapper.modable.thumbnail
+              img(src="/images/cariblanco.jpg")
+            .caption Big and Strong Cats
+
+        .span3
+            .imgWrapper.modable.thumbnail
+              img(src="/images/titi.jpg")
+            .caption Big and Small Birds 
+
+        .span3
+            .imgWrapper.modable.thumbnail
+              img(src="/images/congo.jpg")
+            .caption Trees, Plants and Flowers
+
+
+      .row-fluid
+        .span3
+            .imgWrapper.modable.thumbnail
+              img(src="/images/pizote.jpg")
+            .caption Monkeys and Perecezos
+
 
       span.label.label-success All fotos are ours taken with our Canon SLR and 300MM lense
       br
@@ -207,6 +239,19 @@
           td 
             span.label.label-warning $49 
             span.details p/p
+
+        tr
+          td
+            <i class="icon-star"></i>
+            <i class="icon-star"></i>
+            <i class="icon-star"></i>
+
+          td 
+            h4 Shuttle from San Jose
+          td 
+            span.label.label-warning $49 
+            span.details p/p
+
 
         tr
           td
