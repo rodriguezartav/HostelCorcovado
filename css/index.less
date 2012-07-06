@@ -2,7 +2,7 @@
 @import "./bootstrap/responsive.less";
 
 body{
-  padding-top: 50px;
+  padding-top: 61px;
 }
 
 .container{
@@ -11,16 +11,23 @@ body{
 
 .navbar{
   .navbar-inner{
-    background: #fff;
-    @shadow: 0 1px 10px rgba(0, 0, 0, 0.25);
-    border-bottom: 1px solid #999;
+    background: url("/images/stucco.png") repeat;
+    @shadow: 0 2px 20px rgba(0, 0, 0, 0.4);
+    border-bottom: 5px solid @greenYellow;
     .box-shadow(@shadow);
     .container{
       width: 1170px;
-      padding: 18px 0px 10px 0px;
+      padding: 13px 0px 15px 0px;
       
       .btn{
         margin: 0px;
+				background: @greenYellow;
+				-webkit-border-radius: 0px; -moz-border-radius: 0px; border-radius: 0px;
+				-webkit-box-shadow: 0px -12px 0px rgba(69,96,49,.2) inset; -moz-box-shadow: 0px -12px 0px rgba(69,96,49,.2) inset; box-shadow: 0px -12px 0px rgba(69,96,49,.2) inset; 
+      }
+
+			.btn:active, .btn:hover {
+				-webkit-box-shadow: 0px 12px 0px rgba(69,96,49,.2) inset; -moz-box-shadow: 0px 12px 0px rgba(69,96,49,.2) inset; box-shadow: 0px 12px 0px rgba(69,96,49,.2) inset; 
       }
       
       .logo{
@@ -28,15 +35,17 @@ body{
         font-weight: 100;
         display: inline-block;
         vertical-align: top;
+				color: @black;
+				line-height: 26px;
       }
       
       .slogan{
-        display: inline-block;
-        text-shadow: 0 2px 2px rgba(33,33,33,.15);      
-        color: @green;
+        display: inline-block;      
+        color: @greenYellow;
         font-weight: 900;
         font-size: 20px;
         vertical-align: top;
+				line-height: 26px;
       }
       
     }
@@ -45,35 +54,67 @@ body{
 
 // SPLASH
 .splash{
-
-  padding: 20px 0px;
+  padding: 47px 0 20px;
   background-color: #dedede;
-  background-image: url("/images/arches.png"); 
+  background-image: url("/images/tileable_wood_texture.png");
+ 	height: 405px;
+	overflow: hidden;
+	padding: 0px;
+	
+	.span4{
+		margin-top: 8px;
+	}
   
   .carousel{
-    border: 7px solid @green;
+  }
+
+	.carousel-caption{
+		bottom: 40px;
+		width: 215px;
+		height: auto;
+		padding: 10px 20px 5px;
+		text-align: right;
+  }
+		
+		h4{
+			font-weight: 100;
+			line-height: 24px;
+			letter-spacing: 2px;
+			text-transform: uppercase;
+		}
+
+	.carousel-control{
+		margin-top: 10px;
   }
   
   .discount{
     font-size: 14px;
     font-weight: 500;
-    padding: 6px 5px;
+    padding: 5px 5px 7px;
+		width: 292px;
+		text-align: center;
+		color: @brown;
   }
     
   .callout{
-    width: 80%;
-    border: 1px solid #fff;
-    margin-bottom: 6px;
-    margin-top: 6px;
+    width: 91%;
+    margin-bottom: 8px;
+    margin-top: 8px;
     padding: 15px;
+		border-color: @brown;
+		-webkit-border-radius: 0; -moz-border-radius: 0; border-radius: 0;
     .badge{
       font-size: 20px;
-      padding:15px;
+      padding: 14px 10px;
+			-webkit-border-radius: 0; -moz-border-radius: 0; border-radius: 0;
     }
     .roomType{
-      font-size: 20px;
-      line-height: 10px;
-      font-weight: 200;
+      font-size: 14px;
+      line-height: 18px;
+      font-weight: 500;
+			text-align: left;
+			display: block;
+			padding: 5px 0px 0px 75px;
       small{
         font-size: 14px;
         font-weight: 100;
@@ -81,18 +122,96 @@ body{
       }
     }
   }
+
+	.btn-success{
+		background: @brownLight;
+		-webkit-box-shadow: 0px -33px 0px rgba(68,46,24,.2) inset; -moz-box-shadow: 0px -33px 0px rgba(68,46,24,.2) inset; box-shadow: 0px -33px 0px rgba(68,46,24,.2) inset;
+	}
   
+	.btn-success:active, .btn-success:hover {
+		background: @brownLight;
+		-webkit-box-shadow: 0px 35px 0px rgba(68,46,24,.2) inset; -moz-box-shadow: 0px 35px 0px rgba(68,46,24,.2) inset; box-shadow: 0px 35px 0px rgba(68,46,24,.2) inset;
+	}
 }
-  
+
+// alerts
+.alert{
+	border:none;
+	-webkit-border-radius: 0; -moz-border-radius: 0; border-radius: 0;
+	padding: 8px 35px 15px 30px;
+}
+
+.alert-success{
+	text-align: center;
+	-webkit-box-shadow: 0 -2px 20px rgba(0, 0, 0, 0.4); -moz-box-shadow: 0 -2px 20px rgba(0, 0, 0, 0.4); box-shadow: 0 -2px 20px rgba(0, 0, 0, 0.4);
+}
+	
+	h4{
+		font-family: 'Lato', sans-serif;
+		color: @greenYellowDark;
+		text-shadow: none;
+	}
+
+.alert-warning{
+	padding: 15px 35px;
+	}
+	
+	.btn-warning{
+		-webkit-border-radius: 0; -moz-border-radius: 0; border-radius: 0;
+		background: @brownLight;
+		-webkit-box-shadow: 0px -15px 0px rgba(68,46,24,.2) inset; -moz-box-shadow: 0px -15px 0px rgba(68,46,24,.2) inset; box-shadow: 0px -15px 0px rgba(68,46,24,.2) inset;
+	}
+	.btn-warning:active, .btn-warning:hover {
+		background: @brownLight;
+		-webkit-box-shadow: 0px 15px 0px rgba(68,46,24,.2) inset; -moz-box-shadow: 0px 15px 0px rgba(68,46,24,.2) inset; box-shadow: 0px 15px 0px rgba(68,46,24,.2) inset;
+	}
+
+.alert-info{
+	margin: 0px;
+	padding: 15px 35px;
+	.row-fluid{		
+		.span4{
+			position: relative;
+			.btn-info{
+				position: absolute;
+				top: 35px;
+				-webkit-border-radius: 0; -moz-border-radius: 0; border-radius: 0;
+				background: @brownLight;
+				-webkit-box-shadow: 0px -15px 0px rgba(68,46,24,.2) inset; -moz-box-shadow: 0px -15px 0px rgba(68,46,24,.2) inset; box-shadow: 0px -15px 0px rgba(68,46,24,.2) inset;
+			}
+			.btn-info:active, .btn-info:hover {
+				background: @brownLight;
+				-webkit-box-shadow: 0px 15px 0px rgba(68,46,24,.2) inset; -moz-box-shadow: 0px 15px 0px rgba(68,46,24,.2) inset; box-shadow: 0px 15px 0px rgba(68,46,24,.2) inset;
+			}
+		}
+	}
+}
+.alert-success, .alert-warning, .alert-info{
+	color: @white;
+	background: url("/images/stucco-green.jpg") repeat;
+	text-shadow: 0 1px 0 @greenYellowDark;
+}
+
+.alert-warning .span{
+	margin-left: 0px;
+}
+ 
 // info
 .info{
   padding: 20px 0px 30px 0px;
-  background-color: #F8F8F8;
+  background: url("/images/stucco.png") repeat;
   border-bottom: 1px solid #EFEFEF;
   border-top: 1px solid #EFEFEF;
   h2{
     text-shadow: 1px 1px 0 #F2F2F2, 1px 2px 0 #B1B1B2;
+		color: @greenYellow;
+		margin: 0px 0px 15px;
   }
+	
+	h4{
+		font-family: 'Lato', sans-serif;
+		color: @brown;
+	}
   
   p{
     margin: 0 30px 9px 0;
@@ -101,29 +220,72 @@ body{
     line-height: 23px;
     font-weight: 100;
     text-align: justify;
+		color: @brown;
   }
+
+	h3{
+		font-weight: 200;
+		font-size: 14px;
+		font-style: italic;
+		font-family: 'Lato', sans-serif;
+		color: @greenYellow;
+	}
   
 }
 
 .hostel{
-  .caption{
-    color: #444;
+	h1{
     text-shadow: 1px 1px 0 #F2F2F2, 1px 2px 0 #B1B1B2;
-    
+		color: @greenYellow;
+		margin: 0px 0px 15px;
+  }
+	h3, h6{
+    font-family: 'Lato', sans-serif;
+		color: @brown;
+  }
+
+	h6{
+		font-weight: 300;
+	}
+
+  .caption{
+    color: @brown;
+		margin: 15px 0 0px;
   }
   p{
     font-family: 'Lato', sans-serif;
     font-size: 14 px;
     line-height: 18px;
     font-weight: 100;
+		color: @brown;
   }
+	.thumbnail{
+		cursor: pointer;
+	}
+	.thumbnail:hover{
+		border-color: @greenYellow;
+	}
 }
 
 .wildlife{
+	h1{
+		text-shadow: 1px 1px 0 #F2F2F2, 1px 2px 0 #B1B1B2;
+		color: @greenYellow;
+		margin: 0px 0px 15px;
+	}
+	h4{
+    font-family: 'Lato', sans-serif;
+		color: @brown;
+  }
   .imgWrapper{
-    height: 40px;
+    height: 68px;
     overflow: hidden;
     position: relative;
+		margin-bottom:10px;
+		cursor: pointer;
+  }
+	.imgWrapper:hover{
+		border-color: @greenYellow;
   }
   img{
     position: absolute;
@@ -131,6 +293,10 @@ body{
   .caption{
     display: none;
   }
+	.label-success{
+		margin: 8px 0px 0px;
+		display: block;
+	}
 }
 
 .activities{
@@ -144,9 +310,14 @@ body{
     padding-left: 3px;
     display: inline-block;
   }
+	h1{
+		text-shadow: 1px 1px 0 #F2F2F2, 1px 2px 0 #B1B1B2;
+		color: @greenYellow;
+		margin: 0px 0px 15px;
+	}
   h4{
-    font-weight: 400;
-    color: #555;
+		font-family: 'Lato', sans-serif;
+    color: @brown;
   }
 }
 
